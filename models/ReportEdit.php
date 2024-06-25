@@ -1108,7 +1108,7 @@ class ReportEdit extends Report
             }
 
             // status_id
-            $this->status_id->setDbValueDef($rsnew, $this->status_id->CurrentValue, 0, $this->status_id->ReadOnly);
+            $this->status_id->setDbValueDef($rsnew, $this->status_id->CurrentValue, null, $this->status_id->ReadOnly);
 
             // keterangan
             $this->keterangan->setDbValueDef($rsnew, $this->keterangan->CurrentValue, null, $this->keterangan->ReadOnly);

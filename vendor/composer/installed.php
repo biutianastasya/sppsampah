@@ -374,9 +374,9 @@
             'dev_requirement' => false,
         ),
         'slim/http' => array(
-            'pretty_version' => '1.3',
-            'version' => '1.3.0.0',
-            'reference' => '9542edbe469b7c0f3084c2467efea972387f5beb',
+            'pretty_version' => '1.4.0',
+            'version' => '1.4.0.0',
+            'reference' => 'a8def7b8e9eabd0cdc21654ad4a82606942e066a',
             'type' => 'library',
             'install_path' => __DIR__ . '/../slim/http',
             'aliases' => array(),

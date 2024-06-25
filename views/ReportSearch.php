@@ -93,7 +93,7 @@ $Page->showMessage();
         </label>
         <div class="<?= $Page->RightColumnClass ?>"><div <?= $Page->lokasi->cellAttributes() ?>>
             <span id="el_report_lokasi" class="ew-search-field ew-search-field-single">
-<input type="<?= $Page->lokasi->getInputTextType() ?>" data-table="report" data-field="x_lokasi" name="x_lokasi" id="x_lokasi" maxlength="255" placeholder="<?= HtmlEncode($Page->lokasi->getPlaceHolder()) ?>" value="<?= $Page->lokasi->EditValue ?>"<?= $Page->lokasi->editAttributes() ?>>
+<input type="<?= $Page->lokasi->getInputTextType() ?>" data-table="report" data-field="x_lokasi" name="x_lokasi" id="x_lokasi" maxlength="510" placeholder="<?= HtmlEncode($Page->lokasi->getPlaceHolder()) ?>" value="<?= $Page->lokasi->EditValue ?>"<?= $Page->lokasi->editAttributes() ?>>
 <div class="invalid-feedback"><?= $Page->lokasi->getErrorMessage(false) ?></div>
 </span>
         </div></div>

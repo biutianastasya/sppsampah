@@ -74,7 +74,7 @@ class Report extends DbTable
         $this->BasicSearch->TypeDefault = "OR";
 
         // id
-        $this->id = new DbField('report', 'report', 'x_id', 'id', '`id`', '`id`', 3, 11, -1, false, '`id`', false, false, false, 'FORMATTED TEXT', 'NO');
+        $this->id = new DbField('report', 'report', 'x_id', 'id', '`id`', '`id`', 20, 20, -1, false, '`id`', false, false, false, 'FORMATTED TEXT', 'NO');
         $this->id->IsAutoIncrement = true; // Autoincrement field
         $this->id->IsPrimaryKey = true; // Primary key field
         $this->id->Sortable = true; // Allow sort
@@ -83,7 +83,7 @@ class Report extends DbTable
         $this->Fields['id'] = &$this->id;
 
         // lokasi
-        $this->lokasi = new DbField('report', 'report', 'x_lokasi', 'lokasi', '`lokasi`', '`lokasi`', 200, 255, -1, false, '`lokasi`', false, false, false, 'FORMATTED TEXT', 'TEXTAREA');
+        $this->lokasi = new DbField('report', 'report', 'x_lokasi', 'lokasi', '`lokasi`', '`lokasi`', 201, 510, -1, false, '`lokasi`', false, false, false, 'FORMATTED TEXT', 'TEXTAREA');
         $this->lokasi->Nullable = false; // NOT NULL field
         $this->lokasi->Required = true; // Required field
         $this->lokasi->Sortable = true; // Allow sort
@@ -106,7 +106,6 @@ class Report extends DbTable
 
         // status_id
         $this->status_id = new DbField('report', 'report', 'x_status_id', 'status_id', '`status_id`', '`status_id`', 3, 11, -1, false, '`status_id`', false, false, false, 'FORMATTED TEXT', 'RADIO');
-        $this->status_id->Nullable = false; // NOT NULL field
         $this->status_id->Required = true; // Required field
         $this->status_id->Sortable = true; // Allow sort
         $this->status_id->Lookup = new Lookup('status_id', 'status', false, 'id', ["status","","",""], [], [], [], [], [], [], '', '');
