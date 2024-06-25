@@ -837,6 +837,8 @@ class ReportEdit extends Report
 
             // gambar_terproses
             if (!EmptyValue($this->gambar_terproses->Upload->DbValue)) {
+                $this->gambar_terproses->ImageWidth = 300;
+                $this->gambar_terproses->ImageHeight = 0;
                 $this->gambar_terproses->ImageAlt = $this->gambar_terproses->alt();
                 $this->gambar_terproses->ViewValue = $this->gambar_terproses->Upload->DbValue;
             } else {
@@ -930,6 +932,8 @@ class ReportEdit extends Report
             $this->gambar_terproses->EditAttrs["class"] = "form-control";
             $this->gambar_terproses->EditCustomAttributes = "";
             if (!EmptyValue($this->gambar_terproses->Upload->DbValue)) {
+                $this->gambar_terproses->ImageWidth = 300;
+                $this->gambar_terproses->ImageHeight = 0;
                 $this->gambar_terproses->ImageAlt = $this->gambar_terproses->alt();
                 $this->gambar_terproses->EditValue = $this->gambar_terproses->Upload->DbValue;
             } else {

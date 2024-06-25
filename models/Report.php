@@ -933,6 +933,8 @@ SORTHTML;
 
         // gambar_terlapor
         if (!EmptyValue($this->gambar_terlapor->Upload->DbValue)) {
+            $this->gambar_terlapor->ImageWidth = 300;
+            $this->gambar_terlapor->ImageHeight = 0;
             $this->gambar_terlapor->ImageAlt = $this->gambar_terlapor->alt();
             $this->gambar_terlapor->ViewValue = $this->gambar_terlapor->Upload->DbValue;
         } else {
@@ -942,6 +944,8 @@ SORTHTML;
 
         // gambar_terproses
         if (!EmptyValue($this->gambar_terproses->Upload->DbValue)) {
+            $this->gambar_terproses->ImageWidth = 300;
+            $this->gambar_terproses->ImageHeight = 0;
             $this->gambar_terproses->ImageAlt = $this->gambar_terproses->alt();
             $this->gambar_terproses->ViewValue = $this->gambar_terproses->Upload->DbValue;
         } else {
@@ -1087,6 +1091,8 @@ SORTHTML;
         $this->gambar_terlapor->EditAttrs["class"] = "form-control";
         $this->gambar_terlapor->EditCustomAttributes = "";
         if (!EmptyValue($this->gambar_terlapor->Upload->DbValue)) {
+            $this->gambar_terlapor->ImageWidth = 300;
+            $this->gambar_terlapor->ImageHeight = 0;
             $this->gambar_terlapor->ImageAlt = $this->gambar_terlapor->alt();
             $this->gambar_terlapor->EditValue = $this->gambar_terlapor->Upload->DbValue;
         } else {
@@ -1100,6 +1106,8 @@ SORTHTML;
         $this->gambar_terproses->EditAttrs["class"] = "form-control";
         $this->gambar_terproses->EditCustomAttributes = "";
         if (!EmptyValue($this->gambar_terproses->Upload->DbValue)) {
+            $this->gambar_terproses->ImageWidth = 300;
+            $this->gambar_terproses->ImageHeight = 0;
             $this->gambar_terproses->ImageAlt = $this->gambar_terproses->alt();
             $this->gambar_terproses->EditValue = $this->gambar_terproses->Upload->DbValue;
         } else {
